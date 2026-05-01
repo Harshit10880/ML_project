@@ -9,3 +9,16 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
 
 df = pd.read_csv('retail_practice_data_cleaned.csv')
+
+
+
+# Trying things out with the StandardScaler
+
+scaler = StandardScaler()
+# Formula applied: z = (x - mean) / std_dev
+df['Age_Standardized'] = scaler.fit_transform(df[['Customer_Age']])
+
+# Check the results
+# print(df[['Customer_Age', 'Age_Standardized']].head())
+pd.options.display.float_format = '{:.4f}'.format
+print(df[['Customer_Age', 'Age_Standardized']].head())
