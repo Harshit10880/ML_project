@@ -13,3 +13,10 @@ plt.figure(figsize=(15, 10))
 plt.subplot(2, 2, 1)
 sns.boxplot(x=df['Total_Spent'])
 plt.title('Identifying Price Outliers')
+
+
+# 2 . Histogram for Customer_Age to see distribution and missing values
+
+plt.subplot(2, 2, 2)
+sns.histplot(df['Customer_Age'].dropna(), bins=20, kde=True, color='skyblue')
+plt.title('Customer Age Distribution')
