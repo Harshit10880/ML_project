@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 
-# Set seed for consistency so your results match my tutoring
 np.random.seed(42)
 
 n_rows = 500
@@ -23,13 +22,12 @@ data = {
 df = pd.DataFrame(data)
 df['Total_Spent'] = np.round(df['Quantity'] * df['Unit_Price'], 2)
 
-# Adding the "Tutor Challenges" (Messy Data)
-df.loc[df.sample(25).index, 'Customer_Age'] = np.nan  # Missing Age
-df.loc[df.sample(15).index, 'Payment_Method'] = np.nan # Missing Payment
-df.loc[50, 'Total_Spent'] = 99999.99                  # Outlier
-df.loc[100, 'Product_Category'] = 'electrnics'        # Typo
-df = pd.concat([df, df.sample(10)], ignore_index=True) # Duplicates
 
-# Save to your computer
+df.loc[df.sample(25).index, 'Customer_Age'] = np.nan  
+df.loc[df.sample(15).index, 'Payment_Method'] = np.nan
+df.loc[50, 'Total_Spent'] = 99999.99                  
+df.loc[100, 'Product_Category'] = 'electrnics'        
+df = pd.concat([df, df.sample(10)], ignore_index=True)
+
 df.to_csv('retail_practice_data.csv', index=False)
-print("✅ Success! 'retail_practice_data.csv' has been created with all rows.")
+print("Success! 'retail_practice_data.csv' has been created with all rows.")
