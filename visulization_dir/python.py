@@ -32,7 +32,7 @@ plt.title('Sales by Product Category')
 # 4 . Heatmap for correlation between numeric features
 
 plt.subplot(2, 2, 4)
-# We only use numeric columns for correlation
+# use numeric columns for correlation
 numeric_df = df.select_dtypes(include=['float64', 'int64'])
 sns.heatmap(numeric_df.corr(), annot=True, cmap='coolwarm')
 plt.title('Correlation between Numeric Features')
