@@ -58,3 +58,6 @@ X_test_scaled = scaler.transform(X_test)
 
 model = LogisticRegression()
 model.fit(X_train_scaled, y_train)
+
+predictions = model.predict(X_test_scaled)
+print(f"Model Accuracy: {accuracy_score(y_test, predictions) * 100:.2f}%")
