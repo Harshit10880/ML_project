@@ -1,0 +1,16 @@
+Transaction_ID,Date,Customer_ID,Product_Category,Quantity,Unit_Price,Payment_Method,Return_Status,Customer_Age,Total_Spent
+T2000,2026-02-16,C4273,Home,8,124.08,Credit Card,Yes,56.0,992.64
+T2001,2026-03-24,C2071,Grocery,3,178.6,Debit Card,Yes,30.0,535.8
+T2002,2026-01-26,C1304,Electronics,1,107.0,Cash,Yes,36.0,107.0
+T2003,2026-03-29,C8080,Beauty,5,446.47,Credit Card,No,60.0,2232.35
+T2004,2026-02-23,C8471,Grocery,4,332.61,E-wallet,No,59.0,1330.44
+T2005,2026-01-02,C9842,Beauty,1,452.12,Cash,No,38.0,452.12
+T2006,2026-01-08,C6524,Electronics,1,262.16,E-wallet,Yes,53.0,262.16
+T2007,2026-04-18,C6507,Clothing,7,458.07,Cash,No,38.0,3206.49
+T2008,2026-03-16,C9866,Beauty,1,141.24,E-wallet,Yes,20.0,141.24
+T2009,2026-03-23,C4465,Clothing,7,56.28,Debit Card,No,69.0,393.96
+T2010,2026-02-18,C4148,Clothing,5,223.59,E-wallet,Yes,43.0,1117.95
+T2050,2026-02-10,C1234,Electronics,2,150.00,Cash,No,29.0,99999.99
+T2115,2026-04-05,C8891,electrnics,3,400.00,Credit Card,Yes,,1200.00
+T2267,2026-01-15,C5542,HOME_DÉCOR,10,45.00,Debit Card,No,45.0,450.00
+... (plus 486 more rows)
