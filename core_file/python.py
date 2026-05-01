@@ -22,3 +22,14 @@ df['Age_Standardized'] = scaler.fit_transform(df[['Customer_Age']])
 # print(df[['Customer_Age', 'Age_Standardized']].head())
 pd.options.display.float_format = '{:.4f}'.format
 print(df[['Customer_Age', 'Age_Standardized']].head())
+
+
+# One-hot encoding for Payment_Method
+
+df = pd.get_dummies(df, columns=['Payment_Method'], prefix='Pay', dtype=int)
+print(df[['Pay_Cash', 'Pay_Credit Card', 'Pay_Debit Card', 'Pay_E-wallet']].head())
+
+df['Product_Category'] = df['Product_Category'].replace('electrnics', 'Electronics')
+df = pd.get_dummies(df, columns=['Product_Category'], prefix='Cat', dtype=int)
+
+df['Return_Status'] = df['Return_Status'].map({'Yes': 1, 'No': 0})
