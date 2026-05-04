@@ -7,6 +7,10 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_absolute_error
+
+df = pd.read_csv('retail_practice_data_cleaned.csv')
 
 df = pd.read_csv('retail_practice_data_cleaned.csv')
 
