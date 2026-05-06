@@ -4,9 +4,7 @@ from sklearn.cluster import KMeans
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# 1. READ THE CSV
 df = pd.read_csv('retail_practice_data_cleaned.csv')
-
 
 df['Product_Category'] = df['Product_Category'].replace('electrnics', 'Electronics')
 df['Customer_Age'] = df['Customer_Age'].fillna(df['Customer_Age'].median())
