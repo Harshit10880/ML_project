@@ -1,8 +1,4 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-
+from common_imports import *    
 
 # visulization charts
 # 1. Boxplot for Total_Spent to identify outliers

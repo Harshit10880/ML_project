@@ -1,10 +1,6 @@
-import pandas as pd
-from sklearn.preprocessing import StandardScaler
-from sklearn.cluster import KMeans
-import seaborn as sns
-import matplotlib.pyplot as plt
+from common_imports import *
 
-df = pd.read_csv('retail_practice_data_cleaned.csv')
+df = pd.read_csv('../retail_practice_data_cleaned.csv')
 
 df['Product_Category'] = df['Product_Category'].replace('electrnics', 'Electronics')
 df['Customer_Age'] = df['Customer_Age'].fillna(df['Customer_Age'].median())

@@ -1,5 +1,4 @@
-import numpy as np
-import pandas as pd 
+from common_imports import *
 
 df = pd.read_csv('retail_practice_data.csv')
 print(df.head())

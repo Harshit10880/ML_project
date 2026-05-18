@@ -1,4 +1,5 @@
-from sklearn.ensemble import RandomForestClassifier
+from common_imports import *
+
 
 rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
 
